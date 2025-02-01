@@ -69,10 +69,6 @@ header h5 {
     object-fit: cover;
 }
 
-.frame img:hover {
-    transform: scale(1.2);
-}
-
 /* Social Media Links */
 .social-links {
     margin-top: 20px;
