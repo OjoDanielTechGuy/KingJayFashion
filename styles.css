@@ -11,8 +11,37 @@ body {
 header {
     background-color: #000;
     color: white;
-    padding: 20px;
+    padding: 5px;
     font-size: 24px;
+    display: flex;
+}
+
+/*Logo section*/
+header div img {
+    width: 150px;
+    height: 150px;
+    margin-top: -30px;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px;
+}
+
+header h2,
+header h4,
+header h5 {
+    margin: 1px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+header h4,
+header h5 {
+    color: goldenrod;
 }
 
 /* Gallery Section */
@@ -40,6 +69,10 @@ header {
     object-fit: cover;
 }
 
+.frame img:hover {
+    transform: scale(1.2);
+}
+
 /* Social Media Links */
 .social-links {
     margin-top: 20px;
@@ -47,7 +80,7 @@ header {
 
 .social-icon {
     display: inline-block;
-    margin: 10px;
+    margin: 15px;
     width: 50px;
     height: 50px;
     transition: transform 0.3s ease-in-out;
@@ -58,6 +91,7 @@ header {
     height: 100%;
     border-radius: 50%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 /* Hover Effect */
