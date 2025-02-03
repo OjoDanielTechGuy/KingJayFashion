@@ -1,10 +1,12 @@
 /* General Styling */
+html,
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #f8f8f8;
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -15,13 +17,6 @@ header {
     font-size: 24px;
     display: flex;
 }
-
-/*Logo section*/
-/* header div img {
-    width: 150px;
-    height: 150px;
-    margin-top: -30px;
-} */
 
 .header-text {
     flex: 1;
@@ -73,12 +68,22 @@ header h5 {
 
 /* Social Media Links */
 .social-links {
-    margin-top: 20px;
+    top: 50%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .social-icon {
-    display: inline-block;
-    margin: 15px;
+    margin: 10px 0;
     width: 50px;
     height: 50px;
     transition: transform 0.3s ease-in-out;
@@ -95,12 +100,12 @@ header h5 {
 /* Hover Effect */
 .social-icon:hover {
     transform: scale(1.2);
+    filter: brightness(1.2);
 }
 
 /* Footer */
 footer {
     margin-top: 20px;
-    margin-bottom: 0px;
     background-color: #000;
     color: white;
     padding: 10px;
