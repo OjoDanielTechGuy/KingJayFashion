@@ -7,14 +7,19 @@
     <title>KingJay Closet Solution</title>
     <link rel="icon" type="image/x-icon" href="images/KG.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
 </head>
 
 <body>
-    <header>
-        <div><img src="images/KG.png" alt="Logo"></div>
+    <header class="flex lg:flex-row flex-col items-center justify-between p-4">
+
+        <div><img src="images/KG.png" class="lg:w-[150px] lg:h-[80px] lg:mt-[-80px] w-[170px] h-[100px] mt-[10px]"
+                alt="Logo">
+        </div>
         <div class="header-text">
-            <h1>Fashion Gallery</h1>
-            <h2>KingJay Closet Solution</h2>
+            <h1 class="font-bold lg:text-5xl text-4xl">Fashion Gallery</h1>
+            <h2 class="font-bold lg:text-3xl text-2xl">KingJay Closet Solution</h2>
             <h4>More Than Fashion</h4>
             <h5>A Statement from Head to Toe</h5>
         </div>
