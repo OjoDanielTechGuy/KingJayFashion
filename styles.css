@@ -23,7 +23,6 @@ header {
     text-align: center;
 }
 
-
 header h1 {
     margin: 20px;
 
@@ -39,6 +38,39 @@ header h5 {
 header h4,
 header h5 {
     color: goldenrod;
+}
+
+/*Marquee Section*/
+.marquee-container {
+    background: linear-gradient(to right, goldenrod, rgb(128, 92, 2));
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+
+.marquee-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 50px));
+    }
 }
 
 /* Gallery Section */
